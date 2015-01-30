@@ -3,4 +3,4 @@ Android app that records audio and uses a Fast Fourier Transform (FFT) to analyz
 
 Built for Android L (may not be compatible with previous versions).
 
-Build apk located in the root folder.
+Build apk located in the /bin.
