@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/song"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:gravity="left" >
+    
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/image"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+ 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp"
+        android:text="test1"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+ 
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_gravity="center_vertical|left"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_toRightOf="@+id/icon"
+        android:paddingBottom="15dp"
+        android:paddingLeft="0dp"
+        android:text="test"
+        android:textColor="#bbb"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@android:drawable/ic_menu_delete"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+        
+</RelativeLayout><!-- From: file:/D:/android/Workspace/Davis/res/layout/song.xml -->

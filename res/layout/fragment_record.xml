@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#444" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:layout_weight="0.54" >
+
+        <ImageView
+            android:id="@+id/record_button"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+            android:onClick="StartRecord"
+            android:src="@drawable/record" />
+        
+        <Chronometer android:id="@+id/chronometer"
+	        android:format="%s"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_gravity="center"
+	        android:paddingBottom="30dip"
+	        android:paddingTop="30dip"
+	        android:textSize="40dp"
+	        android:textColor="#fff"/>
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/stop_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="5dp"
+        android:background="@drawable/stoprecordingbackground"
+        android:onClick="stopRecord" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/end_recording"
+            android:textColor = "#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:elevation="5dp"
+	        android:background="?android:attr/selectableItemBackground" />
+        
+    </FrameLayout>
+
+</LinearLayout>

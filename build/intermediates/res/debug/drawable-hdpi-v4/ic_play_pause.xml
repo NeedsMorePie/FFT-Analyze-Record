@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_checked="true"
+        android:drawable="@drawable/play" /> <!-- pressed -->
+    <item android:drawable="@drawable/play" /> <!-- default/unchecked -->
+</selector>  <!-- From: file:/D:/android/Workspace/Davis/res/drawable-hdpi/ic_play_pause.xml -->

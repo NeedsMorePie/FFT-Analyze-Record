@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Davis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="recordings">Recordings</string>
+    <string name="settings">Settings</string>
+    <string name="analyze">Analyze</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">ListViewBaseAdapter</string>
+    <string name="image">Thumbnail</string>
+    <string name="play">Play</string>
+    <string name="stop_playing">Stop playing</string>
+    <string name="record">Record</string>
+    <string name="end_recording">End recording</string>
+    <string name="rename">Rename</string>
+
+    <string-array name="navigation_array">
+        <item>Record</item>
+        <item>Recordings</item>
+        <item>Analyze</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="menu">
+        <item>Delete</item>
+    </string-array>
+
+    <drawable name="black">#000000</drawable>
+    <drawable name="red">#ff4444</drawable>
+    <drawable name="darkred">#cc0000</drawable>
+    <drawable name="blue">#33b5e5</drawable>
+    <drawable name="darkblue">#0099cc</drawable>
+    <drawable name="grey">#555</drawable>
+    <drawable name="transparentgrey">#cc333333</drawable>
+    <drawable name="transparent">@android:color/transparent</drawable>
+    
+    <color name="primary">#33B5E5</color>
+    <color name="primary_dark">#0099CC</color>
+    <color name="accent">#0088AA</color>
+
+    <color name="text_color_default">#fff</color>
+    <color name="text_color_inverse">#400</color>
+    <color name="white">#FFFFFF</color>
+    <color name="list_row_default_bg">#111</color>
+    <color name="list_row_pressed_bg">#555</color>
+    <color name="list_row_selected_bg">#222</color>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="pref_record">Recordings</string>
+    <string name="pref_analyze">Analyze</string>
+
+    <string-array name="recordQuality">
+        <item name="44100">High</item>
+        <item name="8000">Low</item>
+    </string-array>
+    <string-array name="recordQualityValues">
+        <item name="44100">44100</item>
+        <item name="8000">8000</item>
+    </string-array>
+
+    <string name="title_activity_analyzed">AnalyzedActivity</string>
+
+</resources>

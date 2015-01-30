@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="D:\android\Workspace\Davis\build\intermediates\exploded-aar\Workspace\appcompat_v7\unspecified\assets"/></dataSet><dataSet config="main"><source path="D:\android\Workspace\Davis\assets"><file name="fonts/Roboto-Medium.ttf" path="D:\android\Workspace\Davis\assets\fonts\Roboto-Medium.ttf"/></source></dataSet><dataSet config="debug"><source path="D:\android\Workspace\Davis\build-types\debug\assets"/></dataSet></merger>

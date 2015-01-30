@@ -1,0 +1,9 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate xmlns:android="http://schemas.android.com/apk/res/android"
+               android:fromXDelta="-100%"
+               android:toXDelta="0"
+               android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+               android:duration="@android:integer/config_mediumAnimTime"/>
+
+</set><!-- From: file:/D:/android/Workspace/Davis/res/anim/pop_enter.xml -->

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/analyzed_linear_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/save_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="#444"
+        android:choiceMode="singleChoice"
+        android:divider="#4c4c4c"
+        android:dividerHeight="1dp"
+        android:longClickable="true" >
+
+    </ListView>
+    
+    <LinearLayout
+        android:id="@+id/overall__staff_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:orientation="horizontal"
+        android:background="#222" >
+     	<LinearLayout
+            android:id="@+id/music_notes_layout"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:layout_weight="1"
+            android:background="#222" >
+	    </LinearLayout>
+        <HorizontalScrollView
+	        android:id="@+id/music_staff_scrollview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"  >
+	        <LinearLayout
+	            android:id="@+id/music_staff_layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal" >
+	        </LinearLayout>
+    	</HorizontalScrollView>
+        
+    </LinearLayout>
+    
+
+
+</LinearLayout>
+<!-- From: file:/D:/android/Workspace/Davis/res/layout/fragment_analyzed.xml -->

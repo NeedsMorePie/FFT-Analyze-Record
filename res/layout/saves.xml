@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/song"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:gravity="left" >
+ 
+    <TextView
+        android:id="@+id/save_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_toLeftOf="@+id/delete_save"
+        android:paddingBottom="16dp"
+        android:paddingLeft="21dp"
+        android:paddingTop="19dp"
+        android:text="test1"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/delete_save"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@android:drawable/ic_menu_delete"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+        
+</RelativeLayout>

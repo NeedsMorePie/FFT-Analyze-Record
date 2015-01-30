@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/framelayout"
+        android:layout_height="match_parent"
+        android:layout_weight="6.54" >
+        
+   		<ImageView
+		    android:id="@+id/visualization"
+		    android:elevation="0dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+   		    android:background="#444444" />
+
+  		<ImageView
+ 		    android:id="@+id/blank_whites"
+ 		    android:elevation="0dp"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent" />
+   		
+     	<ImageView
+ 		    android:id="@+id/keyboard_lines"
+ 		    android:elevation="0dp"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent"/>
+     	
+     	<ImageView
+ 		    android:id="@+id/blank_blacks"
+ 		    android:elevation="0dp"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="match_parent" />
+     	
+     	<ImageView
+     	    android:id="@+id/analyse_mode_toggle"
+     	    android:elevation="0dp"
+     	    android:layout_width="60dp"
+     	    android:layout_height="60dp"
+     	    android:layout_gravity="bottom|right"
+     	    android:alpha="0.2"
+     	    android:padding="10dp"
+     	    android:onClick="switchAnalyzeMode"
+     	    android:src="@android:drawable/stat_notify_sync_noanim" 
+     		android:background="@drawable/switchbackground" />
+     	
+		<ImageView
+     	    android:id="@+id/open_saved_files"
+     	    android:elevation="0dp"
+     	    android:layout_width="60dp"
+     	    android:layout_height="60dp"
+     	    android:layout_gravity="bottom|left"
+     	    android:alpha="0.2"
+     	    android:padding="10dp"
+     	    android:onClick="openFragmentAnalyzed"
+     	    android:src="@android:drawable/ic_menu_save" 
+     		android:background="@drawable/switchbackground" />
+
+	    <FrameLayout
+	        android:layout_width="200dp"
+	        android:elevation="3dp"
+	        android:layout_height="120dp"
+	        android:layout_gravity="center"
+	        android:background="@drawable/text_bg"
+	        android:id="@+id/text_background"
+	        android:layout_weight="6.54" >
+	        <TextView
+			    android:id="@+id/frequency_display"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:textAppearance="?android:attr/textAppearanceLarge" 
+			    android:textColor="#fff"
+			    android:text="-- Hz" />
+	        <TextView
+			    android:id="@+id/frequency_display2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:visibility="invisible"
+			    android:textAppearance="?android:attr/textAppearanceLarge" 
+			    android:textColor="#fff"
+			    android:text="-- Hz" />
+      	    <TextView
+			    android:id="@+id/frequency_display3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:visibility="invisible"
+			    android:paddingTop="50dp"
+			    android:textAppearance="?android:attr/textAppearanceLarge" 
+			    android:textColor="#fff"
+			    android:text="-- Hz" />
+
+      	    <TextView
+      	        android:id="@+id/media_control_help"
+      	        android:layout_width="wrap_content"
+      	        android:layout_height="wrap_content"
+      	        android:layout_gravity="center"
+      	        android:gravity="center"
+      	        android:paddingTop="93dp"
+      	        android:text="Tap to show media controls"
+      	        android:textAppearance="?android:attr/textAppearanceLarge"
+      	        android:textColor="#666"
+      	        android:textSize="12sp"
+      	        android:visibility="invisible" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <FrameLayout
+            android:id="@+id/analyze_toggle_button"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/stoprecordingbackground" >
+
+	        <TextView
+	            android:id="@+id/analyze_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="Start Analyzing"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="#fff"
+	            android:textSize="18sp" />
+
+	        <FrameLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:elevation="500dp"
+		        android:background="?android:attr/selectableItemBackground" />
+	        
+    	</FrameLayout>
+
+	    <FrameLayout
+	        android:id="@+id/background_leves_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:layout_weight="1"
+	        android:layout_gravity="right"
+	        android:background="@drawable/stoprecordingbackground" >
+
+	        <TextView
+	            android:id="@+id/background_levels_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:text="Get Background\n Levels"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="#fff"
+	            android:textSize="18sp" />
+
+	        <FrameLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="60dp"
+		        android:elevation="500dp"
+		        android:background="?android:attr/selectableItemBackground" />
+	        
+    	</FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

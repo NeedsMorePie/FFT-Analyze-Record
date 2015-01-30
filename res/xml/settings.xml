@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@android:style/Theme.Material">
+  
+    <PreferenceCategory android:title="@string/pref_record"
+        android:key="first_category">
+        <ListPreference 
+            android:key="record_quality"
+            android:title="Record Quality"
+            android:summary="Set the quality of your recording"
+            android:entries="@array/recordQuality"
+            android:entryValues="@array/recordQualityValues"
+            android:defaultValue="44100" />   
+        <SwitchPreference
+		    android:key="gain_preference"
+		    android:title="Automatic Gain"
+		    android:defaultValue="true" />
+        <EditTextPreference android:title="Default File Name"
+            android:key="file_name"
+            android:summary="Set the default name that recordings will be saved as"
+            android:defaultValue="recording" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_analyze"
+        android:key="second_category">
+        <EditTextPreference android:title="Calibrate Note Detector"
+            android:key="calibrate_value"
+            android:inputType="number"
+            android:hint="Default: 440"
+            android:summary="Set the frequency that A4 is tuned to\n(Default: 440 Hz)"
+            android:defaultValue="440" />
+        <SwitchPreference android:title="Analyze Mode"
+            android:key="analyse_mode"
+            android:summary="On - From microphone\nOff - From system output"
+            android:defaultValue="false" />
+        <SwitchPreference android:title="Auto-save Analysis"
+            android:key="auto_save"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+     
+</PreferenceScreen>

@@ -1,0 +1,50 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:longClickable="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6.54"
+        android:background="#444"
+        android:animateLayoutChanges="false"
+        android:choiceMode="singleChoice"
+        android:divider="#4c4c4c"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/rename_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="stopRecord"
+        android:background="@drawable/stoprecordingbackground" >
+
+        <TextView
+            android:id="@+id/renametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/rename"
+            android:textColor="#fff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:elevation="500dp"
+	        android:background="?android:attr/selectableItemBackground" />
+        
+    </FrameLayout>
+
+</LinearLayout>
+<!-- From: file:/D:/android/Workspace/Davis/res/layout/fragment_recordings.xml -->

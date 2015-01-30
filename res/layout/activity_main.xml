@@ -1,0 +1,57 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:background="#444" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+
+
+    <FrameLayout
+        android:id="@+id/mainframe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+     	    <VideoView
+		        android:id="@+id/video_player"
+		        android:layout_width="1sp"
+		        android:gravity="center"
+		        android:layout_height="1sp" />
+            <FrameLayout
+		        android:id="@+id/content_frame"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:animateLayoutChanges="true" />
+        </FrameLayout>
+    
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         The drawer is given a fixed width in dp and extends the full height of
+         the container. A solid background is used for contrast
+         with the content view. -->
+         
+    <Chronometer android:id="@+id/master_chronometer"
+	        android:format="%s"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:layout_gravity="center"
+	        android:paddingBottom="0dip"
+	        android:paddingTop="0dip"
+	        android:textSize="0dp"
+	        android:textColor="#fff"/>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:background="#111"/>
+  
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.davis.AnalyzedActivity" >
+
+    <item
+        android:id="@+id/autosave_switch_item"
+        android:showAsAction="always"
+        android:orderInCategory="100"
+        android:actionLayout="@layout/auto_save_switch"
+        android:title=""/>
+
+</menu>
